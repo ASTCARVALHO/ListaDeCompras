@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e50c38bc-33c8-45f5-9059-b7b250a56129" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeCompras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeCompras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/SistemaLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/SistemaLista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/astca/ListaDeCompras"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
