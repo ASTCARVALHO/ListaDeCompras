@@ -4,7 +4,11 @@ import javax.swing.*;
 
 public class ListaDeCompras {
     public static void main(String[] args) {
-        JFrame listaDeComprasGUI = new ListaDeComprasGUI();
-
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new ListaDeComprasGUI();
+            }
+        });
     }
 }
