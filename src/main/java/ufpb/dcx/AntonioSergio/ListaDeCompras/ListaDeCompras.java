@@ -17,8 +17,7 @@ public class ListaDeCompras {
 
     }
     SistemaLista sistema = new SistemaLista();
-    public  void adicionar(){
-
-        sistema.adicionarProduto();
+    public static void adicionar(){
+        String nome = JOptionPane.showInputDialog("Digite o nome");
     }
 }

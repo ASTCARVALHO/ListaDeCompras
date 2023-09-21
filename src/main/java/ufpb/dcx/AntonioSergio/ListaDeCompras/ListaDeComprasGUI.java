@@ -1,5 +1,7 @@
 package ufpb.dcx.AntonioSergio.ListaDeCompras;
 
+import org.w3c.dom.ls.LSOutput;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -27,8 +29,8 @@ public class ListaDeComprasGUI extends JFrame {
         adicionarbtn.addActionListener(this::adicionar);
     }
 
-    private void adicionar(ActionEvent actionEvent) {
-
+    private void adicionar(ActionEvent actionEvent){
+        ListaDeCompras.adicionar();
     }
 
 }
