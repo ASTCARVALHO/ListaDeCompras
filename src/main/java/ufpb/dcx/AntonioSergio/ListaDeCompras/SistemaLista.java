@@ -9,4 +9,9 @@ public class SistemaLista {
     // remover produto na lista
     //somar valor total dos produtos da lista
     List<Produto> produtos = new LinkedList<>();
+
+    public void adicionarProduto(String nome, double preço,TipoProduto tipoProduto, int quantidade){
+        Produto produto = new Produto(nome, preço,tipoProduto,quantidade);
+        produtos.add(produto);
+    }
 }

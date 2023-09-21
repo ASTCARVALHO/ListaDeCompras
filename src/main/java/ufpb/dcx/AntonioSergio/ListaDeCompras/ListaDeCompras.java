@@ -14,5 +14,8 @@ public class ListaDeCompras {
                 new ListaDeComprasGUI();
             }
         });
+        public void adicionar(){
+
+        }
     }
 }
