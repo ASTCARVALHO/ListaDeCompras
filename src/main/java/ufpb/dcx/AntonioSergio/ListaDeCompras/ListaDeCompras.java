@@ -14,8 +14,11 @@ public class ListaDeCompras {
                 new ListaDeComprasGUI();
             }
         });
-        public void adicionar(){
 
-        }
+    }
+    SistemaLista sistema = new SistemaLista();
+    public  void adicionar(){
+
+        sistema.adicionarProduto();
     }
 }

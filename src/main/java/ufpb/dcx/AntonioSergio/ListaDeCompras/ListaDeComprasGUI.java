@@ -2,6 +2,8 @@ package ufpb.dcx.AntonioSergio.ListaDeCompras;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class ListaDeComprasGUI extends JFrame {
     public ListaDeComprasGUI(){
@@ -22,5 +24,11 @@ public class ListaDeComprasGUI extends JFrame {
         removertbtn.setSize(600,100);
         getContentPane().add(removertbtn);
         setVisible(true);
+        adicionarbtn.addActionListener(this::adicionar);
     }
+
+    private void adicionar(ActionEvent actionEvent) {
+
+    }
+
 }
