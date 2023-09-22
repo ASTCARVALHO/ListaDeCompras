@@ -8,9 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeCompras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeCompras.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/SistemaLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/SistemaLista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/TipoProduto.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695327795481</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="incompleto">
+      <created>1695403824323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695403824323</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

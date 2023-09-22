@@ -15,8 +15,6 @@ public class ListaDeCompras {
             }
         });
     }
-    public static void adicionar(){
 
-    }
 }
 
