@@ -3,9 +3,9 @@ package ufpb.dcx.AntonioSergio.ListaDeCompras;
 public class Produto {
     private String nome;
     private double preco;
-    private TipoProduto tipoProduto;
+    private String tipoProduto;
     private int quantidade;
-    public Produto(String nome, double preco, TipoProduto tipoProduto, int quantidade){
+    public Produto(String nome, double preco,String tipoProduto, int quantidade){
         this.nome = nome;
         this.preco = preco;
         this.tipoProduto = tipoProduto;
@@ -33,11 +33,19 @@ public class Produto {
         this.preco = preco;
     }
 
-    public TipoProduto getTipoProduto() {
+    public String getTipoProduto() {
         return tipoProduto;
     }
 
-    public void setTipoProduto(TipoProduto tipoProduto) {
+    public void setTipoProduto(String tipoProduto) {
         this.tipoProduto = tipoProduto;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 }

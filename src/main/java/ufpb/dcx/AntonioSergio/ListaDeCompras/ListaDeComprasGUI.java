@@ -30,7 +30,7 @@ public class ListaDeComprasGUI extends JFrame {
     }
 
     private void adicionar(ActionEvent actionEvent){
-        ListaDeCompras.adicionar();
+
     }
 
 }

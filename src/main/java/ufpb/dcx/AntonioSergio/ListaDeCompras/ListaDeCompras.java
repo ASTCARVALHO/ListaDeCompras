@@ -14,10 +14,9 @@ public class ListaDeCompras {
                 new ListaDeComprasGUI();
             }
         });
+    }
+    public static void adicionar(){
 
     }
-    SistemaLista sistema = new SistemaLista();
-    public static void adicionar(){
-        String nome = JOptionPane.showInputDialog("Digite o nome");
-    }
 }
+

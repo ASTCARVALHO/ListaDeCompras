@@ -10,8 +10,8 @@ public class SistemaLista {
     //somar valor total dos produtos da lista
     List<Produto> produtos = new LinkedList<>();
 
-    public void adicionarProduto(String nome, double preço,TipoProduto tipoProduto, int quantidade){
-        Produto produto = new Produto(nome, preço,tipoProduto,quantidade);
+    public void adicionarProduto(String nome, double preco,String tipoProduto, int quantidade){
+        Produto produto = new Produto(nome, preco,tipoProduto,quantidade);
         produtos.add(produto);
     }
 }
