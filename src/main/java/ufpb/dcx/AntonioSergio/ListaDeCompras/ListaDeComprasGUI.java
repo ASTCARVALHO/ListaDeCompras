@@ -18,7 +18,6 @@ public class ListaDeComprasGUI extends JFrame {
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(4,4));
-        listaModel = new DefaultListModel<>();
         JList<String> lista = new JList<>(listaModel);
         add(lista);
         JButton adicionarbtn = new JButton();
@@ -40,7 +39,7 @@ public class ListaDeComprasGUI extends JFrame {
         double preco = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor previsto"));
         int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade prevista"));
         sistema.adicionarProduto(nome,preco,tipo,quantidade);
-        for (int i = 0; i < sistema.produtos.size(); i++) {
+        for (int i = 0; i <= sistema.produtos.size(); i++) {
             listaModel.add(i,sistema.produtos.get(i).toString());
         }
 
