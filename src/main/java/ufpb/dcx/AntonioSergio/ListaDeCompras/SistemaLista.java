@@ -14,4 +14,16 @@ public class SistemaLista {
         Produto produto = new Produto(nome, preco,tipoProduto,quantidade);
         produtos.add(produto);
     }
+    public void removerProduto(String nome){
+        for (Produto p: produtos) {
+            if(p.getNome().equals(nome)) produtos.remove(p);
+        }
+    }
+    public double somaValoresTotal(){
+        double valorTotal = 0;
+        for (Produto p: produtos) {
+            valorTotal += p.getPreco();
+        }
+        return valorTotal;
+    }
 }

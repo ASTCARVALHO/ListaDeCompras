@@ -28,6 +28,7 @@ public class ListaDeComprasGUI extends JFrame {
         getContentPane().add(removertbtn);
         setVisible(true);
         adicionarbtn.addActionListener(this::adicionar);
+        removertbtn.addActionListener(this::remover);
     }
 
     private void adicionar(ActionEvent actionEvent){
@@ -36,6 +37,10 @@ public class ListaDeComprasGUI extends JFrame {
         double preco = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor previsto"));
         int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade prevista"));
         sistema.adicionarProduto(nome,preco,tipo,quantidade);
+    }
+    public void remover(ActionEvent actionEvent){
+        String nome = JOptionPane.showInputDialog("Digite o nome");
+        sistema.removerProduto(nome);
     }
 
 }
