@@ -48,4 +48,8 @@ public class Produto {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+    public String toString(){
+        return "Nome :" + this.nome + "\n tipo: " + this.tipoProduto + "\n preço: " + this.preco + "\n quantidade:" + this.quantidade;
+
+    }
 }
