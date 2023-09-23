@@ -17,6 +17,8 @@ public class ListaDeComprasGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(3,3));
         JLabel lista = new JLabel();
+        String texto = "";
+        lista.setText(texto);
         add(lista);
         JButton adicionarbtn = new JButton();
         adicionarbtn.setText("Adicionar");

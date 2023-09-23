@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e50c38bc-33c8-45f5-9059-b7b250a56129" name="Changes" comment="incompleto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,26 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/astca/ListaDeCompras&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="ListaDeCompras" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ufpb.dcx.AntonioSergio.ListaDeCompras.ListaDeCompras" />
+      <module name="ListaDeCompras" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ufpb.dcx.AntonioSergio.ListaDeCompras.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ListaDeCompras" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -111,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695484338497</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="incompleto">
+      <created>1695486195802</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1695486195802</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
