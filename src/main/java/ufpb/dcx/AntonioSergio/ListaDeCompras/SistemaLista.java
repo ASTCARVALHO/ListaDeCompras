@@ -12,7 +12,21 @@ public class SistemaLista implements  ListaDecomprasInterface{
     GravadorDeDados gravador = new GravadorDeDados();
     public SistemaLista(){
          produtos = new LinkedList<>();
-         gravador.recuperarProdutos();
+         recuperarLista();
+    }
+    public void salvarDados(){
+        try {
+            this.gravador.salvarLista(this.produtos);
+        }catch (Exception e ){
+            System.err.println(e.getMessage());
+        }
+    }
+    public void recuperarLista(){
+        try {
+            this.gravador.recuperarLista();
+        }catch (Exception e){
+            System.err.println(e.getMessage());
+        }
     }
     @Override
     public void adicionarProduto(String nome, double preco,String tipoProduto, int quantidade) {
