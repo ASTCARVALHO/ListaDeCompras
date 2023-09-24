@@ -12,6 +12,7 @@ public class GravadorDeDados {
         try {
         out = new ObjectOutputStream(new FileOutputStream(ARQUIVO_LISTA));
         out.writeObject(produtos);
+        out.close();
         }catch (Exception e){
             e.printStackTrace();
             throw new IOException("Erro ao salvar a lista de compras no arquivo: " + ARQUIVO_LISTA);

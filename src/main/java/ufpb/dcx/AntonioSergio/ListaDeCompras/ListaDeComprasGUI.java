@@ -30,6 +30,7 @@ public class ListaDeComprasGUI extends JFrame {
         removertbtn.setSize(600,100);
         getContentPane().add(removertbtn);
         setVisible(true);
+        atualizar();
         adicionarbtn.addActionListener(this::adicionar);
         removertbtn.addActionListener(this::remover);
     }
@@ -44,9 +45,7 @@ public class ListaDeComprasGUI extends JFrame {
         double valorTotalCalc = sistema.somaVaoloresTotal();
         valorTotal.setText(Double.toString(valorTotalCalc));
         listaModel.removeAllElements();
-        for (Produto p: sistema.produtos) {
-            listaModel.addElement(p.toString());
-        }
+        atualizar();
         }
     }
     public void remover(ActionEvent actionEvent) throws RuntimeException{
@@ -58,10 +57,22 @@ public class ListaDeComprasGUI extends JFrame {
         listaModel.removeAllElements();
         double valorTotalCalc = sistema.somaVaoloresTotal();
         valorTotal.setText(Double.toString(valorTotalCalc));
+        atualizar();
+
+    }
+    public void atualizar(){
         for (Produto p: sistema.produtos) {
             listaModel.addElement(p.toString());
         }
-
+        sistema.salvarDados();
+    }
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new ListaDeComprasGUI();
+            }
+        });
     }
 
 }

@@ -1,5 +1,6 @@
 package ufpb.dcx.AntonioSergio.ListaDeCompras;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PropertyResourceBundle;
@@ -23,7 +24,8 @@ public class SistemaLista implements  ListaDecomprasInterface{
     }
     public void recuperarLista(){
         try {
-            this.gravador.recuperarLista();
+            List<Produto> produtosRecuperados = gravador.recuperarLista();
+            this.produtos.addAll(produtosRecuperados);
         }catch (Exception e){
             System.err.println(e.getMessage());
         }
