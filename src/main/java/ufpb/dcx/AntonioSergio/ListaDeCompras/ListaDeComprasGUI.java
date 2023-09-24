@@ -7,6 +7,7 @@ public class ListaDeComprasGUI extends JFrame {
     SistemaLista sistema = new SistemaLista();
 
     DefaultListModel<String> listaModel;
+    JLabel valorTotal;
     public ListaDeComprasGUI(){
         setTitle("Listade compras");
         setSize(400,700);
@@ -17,6 +18,9 @@ public class ListaDeComprasGUI extends JFrame {
         listaModel = new DefaultListModel<>();
         JList<String> lista = new JList<>(listaModel);
         add(lista);
+        valorTotal = new JLabel();
+
+        add(valorTotal);
         JButton adicionarbtn = new JButton();
         adicionarbtn.setText("Adicionar");
         adicionarbtn.setForeground(new Color(255, 0, 0));
