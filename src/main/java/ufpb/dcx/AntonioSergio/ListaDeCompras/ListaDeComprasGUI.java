@@ -10,16 +10,16 @@ public class ListaDeComprasGUI extends JFrame {
     JLabel valorTotal;
     public ListaDeComprasGUI(){
         setTitle("Listade compras");
-        setSize(400,700);
+        setSize(381,729);
         setLocationRelativeTo(null);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLayout(new GridLayout(3,3));
+        setLayout(new GridLayout(4,0));
         listaModel = new DefaultListModel<>();
         JList<String> lista = new JList<>(listaModel);
         add(lista);
         valorTotal = new JLabel();
-
+        valorTotal.setBackground(new Color(0x0000FF));
         add(valorTotal);
         JButton adicionarbtn = new JButton();
         adicionarbtn.setText("Adicionar");
@@ -41,16 +41,23 @@ public class ListaDeComprasGUI extends JFrame {
         double preco = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor previsto"));
         int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade prevista"));
         sistema.adicionarProduto(nome,preco,tipo,quantidade);
+        double valorTotalCalc = sistema.somaVaoloresTotal();
+        valorTotal.setText(Double.toString(valorTotalCalc));
         listaModel.removeAllElements();
         for (Produto p: sistema.produtos) {
             listaModel.addElement(p.toString());
         }
         }
     }
-    public void remover(ActionEvent actionEvent){
+    public void remover(ActionEvent actionEvent) throws RuntimeException{
+        if (sistema.produtos.size() == 0){
+            throw new RuntimeException("Não há produtos");
+        }
         String nome = JOptionPane.showInputDialog("Digite o nome");
         sistema.removerProduto(nome);
         listaModel.removeAllElements();
+        double valorTotalCalc = sistema.somaVaoloresTotal();
+        valorTotal.setText(Double.toString(valorTotalCalc));
         for (Produto p: sistema.produtos) {
             listaModel.addElement(p.toString());
         }
