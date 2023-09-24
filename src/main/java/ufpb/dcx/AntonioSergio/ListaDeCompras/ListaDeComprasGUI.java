@@ -1,11 +1,7 @@
 package ufpb.dcx.AntonioSergio.ListaDeCompras;
-
-import org.w3c.dom.ls.LSOutput;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ListaDeComprasGUI extends JFrame {
     SistemaLista sistema = new SistemaLista();
@@ -17,7 +13,8 @@ public class ListaDeComprasGUI extends JFrame {
         setLocationRelativeTo(null);
         setResizable(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLayout(new GridLayout(4,4));
+        setLayout(new GridLayout(3,3));
+        listaModel = new DefaultListModel<>();
         JList<String> lista = new JList<>(listaModel);
         add(lista);
         JButton adicionarbtn = new JButton();
@@ -35,18 +32,25 @@ public class ListaDeComprasGUI extends JFrame {
 
     private void adicionar(ActionEvent actionEvent){
         String nome = JOptionPane.showInputDialog("Digite o nome");
+        if (nome != null){
         String tipo = JOptionPane.showInputDialog("Digite o tipo do produto");
         double preco = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor previsto"));
         int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade prevista"));
         sistema.adicionarProduto(nome,preco,tipo,quantidade);
-        for (int i = 0; i <= sistema.produtos.size(); i++) {
-            listaModel.add(i,sistema.produtos.get(i).toString());
+        listaModel.removeAllElements();
+        for (Produto p: sistema.produtos) {
+            listaModel.addElement(p.toString());
         }
-
+        }
     }
     public void remover(ActionEvent actionEvent){
         String nome = JOptionPane.showInputDialog("Digite o nome");
         sistema.removerProduto(nome);
+        listaModel.removeAllElements();
+        for (Produto p: sistema.produtos) {
+            listaModel.addElement(p.toString());
+        }
+
     }
 
 }
