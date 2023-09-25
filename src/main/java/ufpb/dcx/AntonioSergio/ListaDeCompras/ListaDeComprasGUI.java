@@ -48,6 +48,7 @@ public class ListaDeComprasGUI extends JFrame {
         setVisible(true);
         adicionarbtn.addActionListener(this::adicionar);
         removerbtn.addActionListener(this::remover);
+        limpaListabtn.addActionListener(this::limparlista);
         atualizar();
     }
 
@@ -78,6 +79,10 @@ public class ListaDeComprasGUI extends JFrame {
         sistema.salvarDados();
         double valorTotalCalc = sistema.somaVaoloresTotal();
         valorTotal.setText(text + Double.toString(valorTotalCalc) + " R$");
+    }
+
+    public void limparlista(ActionEvent e){
+
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {

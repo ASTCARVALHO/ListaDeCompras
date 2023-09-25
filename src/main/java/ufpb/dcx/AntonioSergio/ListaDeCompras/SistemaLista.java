@@ -49,4 +49,7 @@ public class SistemaLista implements  ListaDecomprasInterface{
         }
         return valorTotal;
     }
+    public void limparLista(){
+        this.produtos.clear();
+    }
 }
