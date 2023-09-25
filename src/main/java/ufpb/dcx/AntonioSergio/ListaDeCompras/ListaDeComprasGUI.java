@@ -29,20 +29,20 @@ public class ListaDeComprasGUI extends JFrame {
         valorTotal.setBackground(new Color(0, 100, 255,134));
         add(valorTotal);
 
-        adicionarbtn = new JButton();
+        adicionarbtn = new JButton(new ImageIcon("src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/images/botao-adicionar.png"));
         adicionarbtn.setBounds(85,603,189,59);
-        adicionarbtn.setText("Adicionar");
+        adicionarbtn.setBackground(new Color(39, 225, 26));
         adicionarbtn.setForeground(new Color(255, 0, 0));
         add(adicionarbtn);
 
-        removerbtn = new JButton("Remover");
+        removerbtn = new JButton(new ImageIcon("src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/images/remover.png"));
         removerbtn.setBounds(85,680,189,59);
         removerbtn.setBackground(new Color(255, 0, 0));
         add(removerbtn);
 
-        limpaListabtn = new JButton("clear");
+        limpaListabtn = new JButton(new ImageIcon("src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/images/excluir.png"));
         limpaListabtn.setBounds(295,509,52,43);
-        limpaListabtn.setBackground(new Color(227, 255, 8, 255));
+        limpaListabtn.setBackground(new Color(255, 255, 255));
         add(limpaListabtn);
 
         setVisible(true);
