@@ -82,7 +82,9 @@ public class ListaDeComprasGUI extends JFrame {
     }
 
     public void limparlista(ActionEvent e){
-
+        int confirma = JOptionPane.showConfirmDialog(null, "Deseja realmente limpar a lista? ");
+        if (confirma == JOptionPane.YES_OPTION ) sistema.limparLista();
+        atualizar();
     }
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
