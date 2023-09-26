@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50c38bc-33c8-45f5-9059-b7b250a56129" name="Changes" comment=".">
+    <list default="true" id="e50c38bc-33c8-45f5-9059-b7b250a56129" name="Changes" comment="Design incompleto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lista.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lista.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" afterDir="false" />
@@ -65,11 +65,19 @@
       <option name="project" value="LOCAL" />
       <updated>1695297170122</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Design incompleto">
+      <created>1695745268257</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695745268257</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Design incompleto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design incompleto" />
   </component>
 </project>

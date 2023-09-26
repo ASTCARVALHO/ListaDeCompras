@@ -51,6 +51,6 @@ public class Produto implements Serializable {
         this.quantidade = quantidade;
     }
     public String toString(){
-        return  this.nome + ("                ") + this.tipoProduto + ("                ") + this.preco +("                ") + this.quantidade;
+            return String.format("%-30s%-30s%-30s%-30s", this.nome, this.tipoProduto, this.preco, this.quantidade);
     }
 }
