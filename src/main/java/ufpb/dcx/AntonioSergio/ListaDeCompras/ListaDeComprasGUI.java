@@ -19,7 +19,7 @@ public class ListaDeComprasGUI extends JFrame {
         setLayout(null);
 
         indice = new JLabel();
-        String textIndice =  String.format("%-30s%-30s%-30s%-30s", "Nome", "Tipo", "Valor", "Qtn");
+        String textIndice =  String.format("%-27s%-27s%-27s%-29s", "Nome", "Tipo", "Valor", "Qtn");
         indice.setText(textIndice);
         indice.setBounds(0,0,360,22);
         add(indice);
