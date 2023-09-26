@@ -6,9 +6,10 @@ import java.awt.event.ActionEvent;
 public class ListaDeComprasGUI extends JFrame {
     SistemaLista sistema = new SistemaLista();
     DefaultListModel<String> listaModel;
-    JLabel valorTotal;
+    JLabel valorTotal,indice;
     JList<String> lista;
     JButton adicionarbtn,removerbtn,limpaListabtn;
+    public static final String text = "Valor total: ";
     public ListaDeComprasGUI(){
         setTitle("Listade compras");
         setSize(360,800);
@@ -20,19 +21,21 @@ public class ListaDeComprasGUI extends JFrame {
 
         listaModel = new DefaultListModel<>();
         lista = new JList<>(listaModel);
-        lista.setBounds(0,0,360,484);
+        lista.setBounds(0,0,360,462);
         add(lista);
+
+        indice = new JLabel();
+        indice.setText("Nome   Tipo   Valor   Qtn");
+        indice.setBounds(0,0,360,22);
 
         valorTotal = new JLabel();
         valorTotal.setBounds(0,506,145,46);
-        valorTotal.setForeground(new Color(241, 5, 139));
-        valorTotal.setBackground(new Color(0, 100, 255,134));
+        valorTotal.setForeground(new Color(0, 0, 0));
         add(valorTotal);
 
         adicionarbtn = new JButton(new ImageIcon("src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/images/botao-adicionar.png"));
         adicionarbtn.setBounds(85,603,189,59);
         adicionarbtn.setBackground(new Color(39, 225, 26));
-        adicionarbtn.setForeground(new Color(255, 0, 0));
         add(adicionarbtn);
 
         removerbtn = new JButton(new ImageIcon("src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/images/remover.png"));
@@ -71,15 +74,18 @@ public class ListaDeComprasGUI extends JFrame {
 
     public void remover(ActionEvent actionEvent) throws RuntimeException{
         if (sistema.produtos.size() == 0){
+            JOptionPane.showMessageDialog(null,"Não há produtos na lista", "ERRO", JOptionPane.WARNING_MESSAGE);
             throw new RuntimeException("Não há produtos");
         }
         String nome = JOptionPane.showInputDialog("Digite o nome");
-        sistema.removerProduto(nome);
+        for (Produto p: sistema.produtos) {
+            if (p.getNome().equalsIgnoreCase(nome)) sistema.removerProduto(nome);
+            else JOptionPane.showMessageDialog(null,"Produto não enontrado", "ERRO", JOptionPane.WARNING_MESSAGE);
+        }
         atualizar();
     }
 
     public void atualizar(){
-        String text = "Valor Total: ";
         listaModel.removeAllElements();
         for (Produto p: sistema.produtos) {
             listaModel.addElement(p.toString());
