@@ -55,11 +55,17 @@ public class ListaDeComprasGUI extends JFrame {
     private void adicionar(ActionEvent actionEvent){
         String nome = JOptionPane.showInputDialog("Digite o nome");
         if (nome != null){
-        String tipo = JOptionPane.showInputDialog("Digite o tipo do produto");
-        double preco = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor previsto"));
-        int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade prevista"));
-        sistema.adicionarProduto(nome,preco,tipo,quantidade);
-        atualizar();
+            try {
+                String tipo = JOptionPane.showInputDialog("Digite o tipo do produto");
+                double preco = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor previsto"));
+                int quantidade = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade prevista"));
+                sistema.adicionarProduto(nome,preco,tipo,quantidade);
+                atualizar();
+            }catch (Exception e) {
+                JOptionPane.showMessageDialog(null,"Digite um valor válido", "ERRO", JOptionPane.WARNING_MESSAGE);
+                adicionar(actionEvent);
+            }
+
         }
     }
 
