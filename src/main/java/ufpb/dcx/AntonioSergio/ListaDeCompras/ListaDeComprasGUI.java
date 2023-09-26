@@ -30,7 +30,7 @@ public class ListaDeComprasGUI extends JFrame {
         add(lista);
 
         valorTotal = new JLabel();
-        valorTotal.setBounds(0,506,145,46);
+        valorTotal.setBounds(10,506,145,46);
         valorTotal.setForeground(new Color(0, 0, 0));
         add(valorTotal);
 
@@ -45,7 +45,7 @@ public class ListaDeComprasGUI extends JFrame {
         add(removerbtn);
 
         limpaListabtn = new JButton(new ImageIcon("src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/images/excluir.png"));
-        limpaListabtn.setBounds(295,509,52,43);
+        limpaListabtn.setBounds(280,509,52,43);
         limpaListabtn.setBackground(new Color(255, 255, 255));
         add(limpaListabtn);
 
