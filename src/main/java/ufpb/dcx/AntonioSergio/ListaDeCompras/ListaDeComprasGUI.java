@@ -18,15 +18,15 @@ public class ListaDeComprasGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
 
+        indice = new JLabel();
+        indice.setText("Nome                Tipo                    Valor              Qtn");
+        indice.setBounds(0,0,360,22);
+        add(indice);
 
         listaModel = new DefaultListModel<>();
         lista = new JList<>(listaModel);
-        lista.setBounds(0,0,360,462);
+        lista.setBounds(0,20,360,462);
         add(lista);
-
-        indice = new JLabel();
-        indice.setText("Nome   Tipo   Valor   Qtn");
-        indice.setBounds(0,0,360,22);
 
         valorTotal = new JLabel();
         valorTotal.setBounds(0,506,145,46);
