@@ -13,7 +13,7 @@ public class ListaDeComprasGUI extends JFrame {
         setTitle("Listade compras");
         setSize(360,800);
         setLocationRelativeTo(null);
-        setResizable(true);
+        setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
 
@@ -62,6 +62,7 @@ public class ListaDeComprasGUI extends JFrame {
         atualizar();
         }
     }
+
     public void remover(ActionEvent actionEvent) throws RuntimeException{
         if (sistema.produtos.size() == 0){
             throw new RuntimeException("Não há produtos");
@@ -70,6 +71,7 @@ public class ListaDeComprasGUI extends JFrame {
         sistema.removerProduto(nome);
         atualizar();
     }
+
     public void atualizar(){
         String text = "Valor Total: ";
         listaModel.removeAllElements();
@@ -86,6 +88,7 @@ public class ListaDeComprasGUI extends JFrame {
         if (confirma == JOptionPane.YES_OPTION ) sistema.limparLista();
         atualizar();
     }
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
