@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e50c38bc-33c8-45f5-9059-b7b250a56129" name="Changes" comment="incompleto">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_09_2023_13_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_09_2023_13_06__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lista.dat" beforeDir="false" afterPath="$PROJECT_DIR$/lista.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/ListaDeComprasGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ufpb/dcx/AntonioSergio/ListaDeCompras/Produto.java" afterDir="false" />
-    </list>
+    <list default="true" id="e50c38bc-33c8-45f5-9059-b7b250a56129" name="Changes" comment="incompleto" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695668208606</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="incompleto">
+      <created>1695767847022</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1695767847022</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

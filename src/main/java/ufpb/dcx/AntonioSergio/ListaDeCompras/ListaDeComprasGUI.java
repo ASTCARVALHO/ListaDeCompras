@@ -11,7 +11,7 @@ public class ListaDeComprasGUI extends JFrame {
     JButton adicionarbtn,removerbtn,limpaListabtn;
     public static final String text = "Valor total: ";
     public ListaDeComprasGUI(){
-        setTitle("Listade compras");
+        setTitle("Lista de compras");
         setSize(360,800);
         setLocationRelativeTo(null);
         setResizable(false);
